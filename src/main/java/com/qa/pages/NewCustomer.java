@@ -61,7 +61,7 @@ public class NewCustomer extends TestBase {
 		pin.sendKeys(mobileno);
 		email.sendKeys(Email);
 		password.sendKeys(Password);
-		submit.click();
+		//submit.click();
 
 	}
 
