@@ -1,23 +1,45 @@
-Feature: Home Page of Grue99 bank
+Feature: Home Page of Grue99 bank 
 
-Scenario: Validate Grue99 Home Page
+#Scenario Outline: Validate Username in Home Page 
+#
+#	Given Open the browser and enter the url 
+#	And User loged with "<username>"and "<password>" 
+#	And validate logged in username 
+#	And logout from website 
+#	Then Close the Browser 
+#	
+#	Examples: 
+#		|username|password|
+#		|mgr123|mgr!23|
+		
+		
+#Scenario Outline: Validate the list of Menue in Left side 
+#
+#	Given Open the browser and enter the url 
+#	And User loged with "<username>"and "<password>" 
+#	And Validate Menue List in Left Side 
+#	And logout from website 
+#	Then Close the Browser
+#	
+#	Examples: 
+#		|username|password|
+#		|mgr123|mgr!23|
+		
+		
+		
+		
+		
+		
+Scenario Outline: Validate New Customer Page 
 
-	Given user opens browser
-	Then user is on login page
-	Then user log in application
-	Then valiate home page title
-	Then validate logged in username
-	#Then logout from website
-	#Then close browser
-	Then user click on New Customer option
+	Given Open the browser and enter the url
+	And User loged with "<username>"and "<password>" 
+	And Click on each menue list in left side
+	And logout from website 
+	Then Close the Browser
 	
-	
-	
-	
-#Scenario:  Validate New Customer Page
-
-	#Given User open browser
-	#Then user will log in application
-	#Then user click on New Customer option
+	Examples: 
+		|username|password|
+		|mgr123|mgr!23|
 	
 	

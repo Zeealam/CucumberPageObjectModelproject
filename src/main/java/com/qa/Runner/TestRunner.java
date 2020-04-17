@@ -10,11 +10,11 @@ import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
 
 @CucumberOptions(
-        features = "E:\\OxygenEclipse\\CucumberPageObjectmodel\\src\\main\\java\\com\\qa\\features\\createnewcustomer.feature",
+        features = "E:\\OxygenEclipse\\CucumberPageObjectmodel\\src\\main\\java\\com\\qa\\features\\validatehomepage.feature",
         glue = {"com.qa.stepDefinations"},
         tags = {"~@Ignore"},
         monochrome = true,
-        dryRun = true,
+        dryRun = false,
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
