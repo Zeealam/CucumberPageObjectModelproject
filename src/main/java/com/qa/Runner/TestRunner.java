@@ -12,7 +12,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
         features = "E:\\OxygenEclipse\\CucumberPageObjectmodel\\src\\main\\java\\com\\qa\\features\\validatehomepage.feature",
         glue = {"com.qa.stepDefinations"},
-        tags = {"~@Ignore"},
+        tags = {"@SmokeTest"},
         monochrome = true,
         dryRun = false,
         format = {

@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40507" started-at="2020-04-17T14:24:39Z" finished-at="2020-04-17T14:25:20Z">
+  <suite name="Default suite" duration-ms="39587" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:42:36Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" class="com.qa.Runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="40507" started-at="2020-04-17T14:24:39Z" finished-at="2020-04-17T14:25:20Z">
+    <test name="Default test" duration-ms="39587" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:42:36Z">
       <class name="com.qa.Runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="1023" started-at="2020-04-17T14:24:39Z" finished-at="2020-04-17T14:24:40Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="406" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:41:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" duration-ms="39245" started-at="2020-04-17T14:24:41Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T14:25:20Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" duration-ms="38987" started-at="2020-04-17T14:41:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T14:42:36Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 3aaf0e8551275ffab2b5f8b26645f805]]>
+Session ID: 213f57a2085fd5041876efd1248e134a]]>
             </message>
             <full-stacktrace>
               <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: unknown error: Element <li>...</li> is not clickable at point (120, 458). Other element would receive the click: <p align="right">...</p>
@@ -43,7 +43,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 3aaf0e8551275ffab2b5f8b26645f805
+Session ID: 213f57a2085fd5041876efd1248e134a
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at com.qa.Runner.TestRunner.feature(TestRunner.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -79,7 +79,7 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 3aaf0e8551275ffab2b5f8b26645f805
+Session ID: 213f57a2085fd5041876efd1248e134a
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -95,7 +95,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
 at com.qa.pages.HomePage.menuelistClick(HomePage.java:60)
-at com.qa.stepDefinations.LoginPageStep.Click_on_each_menue_list_in_left_side(LoginPageStep.java:142)
+at com.qa.stepDefinations.StepDefination.Click_on_each_menue_list_in_left_side(StepDefination.java:142)
 at ✽.And Click on each menue list in left side(E:/OxygenEclipse/CucumberPageObjectmodel/src/main/java/com/qa/features/validatehomepage.feature:37)
 ]]>
             </full-stacktrace>
@@ -103,7 +103,7 @@ at ✽.And Click on each menue list in left side(E:/OxygenEclipse/CucumberPageOb
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="29" started-at="2020-04-17T14:25:20Z" finished-at="2020-04-17T14:25:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="23" started-at="2020-04-17T14:42:36Z" finished-at="2020-04-17T14:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
