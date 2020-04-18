@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39587" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:42:36Z">
+  <suite name="Default suite" duration-ms="72500" started-at="2020-04-18T09:55:13Z" finished-at="2020-04-18T09:56:26Z">
     <groups>
       <group name="cucumber">
         <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" class="com.qa.Runner.TestRunner"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="39587" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:42:36Z">
+    <test name="Default test" duration-ms="72500" started-at="2020-04-18T09:55:13Z" finished-at="2020-04-18T09:56:26Z">
       <class name="com.qa.Runner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="406" started-at="2020-04-17T14:41:57Z" finished-at="2020-04-17T14:41:57Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="setUpClass" is-config="true" duration-ms="466" started-at="2020-04-18T09:55:13Z" finished-at="2020-04-18T09:55:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" duration-ms="38987" started-at="2020-04-17T14:41:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-17T14:42:36Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="feature" duration-ms="71839" started-at="2020-04-18T09:55:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-18T09:56:26Z">
           <params>
             <param index="0">
               <value>
@@ -24,26 +24,12 @@
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: Element <li>...</li> is not clickable at point (120, 458). Other element would receive the click: <p align="right">...</p>
-  (Session info: chrome=80.0.3987.163)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 213f57a2085fd5041876efd1248e134a]]>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [16] but found [15]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.WebDriverException: unknown error: Element <li>...</li> is not clickable at point (120, 458). Other element would receive the click: <p align="right">...</p>
-  (Session info: chrome=80.0.3987.163)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 213f57a2085fd5041876efd1248e134a
+              <![CDATA[cucumber.runtime.CucumberException: java.lang.AssertionError: The following asserts failed:
+expected [16] but found [15]
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at com.qa.Runner.TestRunner.feature(TestRunner.java:36)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -71,39 +57,18 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: unknown error: Element <li>...</li> is not clickable at point (120, 458). Other element would receive the click: <p align="right">...</p>
-  (Session info: chrome=80.0.3987.163)
-  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ZEESHAN', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.40.565498 (ea082db3280dd6..., userDataDir: C:\Users\ZEESHA~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 80.0.3987.163, webStorageEnabled: true}
-Session ID: 213f57a2085fd5041876efd1248e134a
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at com.qa.pages.HomePage.menuelistClick(HomePage.java:60)
-at com.qa.stepDefinations.StepDefination.Click_on_each_menue_list_in_left_side(StepDefination.java:142)
-at ✽.And Click on each menue list in left side(E:/OxygenEclipse/CucumberPageObjectmodel/src/main/java/com/qa/features/validatehomepage.feature:37)
+Caused by: java.lang.AssertionError: The following asserts failed:
+expected [16] but found [15]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at com.qa.stepDefinations.StepDefination.Close_the_Browser(StepDefination.java:71)
+at ✽.Then Close the Browser(E:/OxygenEclipse/CucumberPageObjectmodel/src/main/java/com/qa/features/validatehomepage.feature:22)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="23" started-at="2020-04-17T14:42:36Z" finished-at="2020-04-17T14:42:36Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.qa.Runner.TestRunner@402a079c]" name="tearDownClass" is-config="true" duration-ms="39" started-at="2020-04-18T09:56:26Z" finished-at="2020-04-18T09:56:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

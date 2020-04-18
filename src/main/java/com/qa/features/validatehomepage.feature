@@ -25,11 +25,8 @@ Scenario Outline: Validate the list of Menue in Left side
 		|username|password|
 		|mgr123|mgr!23|
 		
-		
-		
-		
-		
-@SmokeTest		
+	
+	
 Scenario Outline: Validate New Customer Page 
 
 	Given Open the browser and enter the url

@@ -1,11 +1,16 @@
 Feature: Create New Customer in Grue99
 
-Scenario: Create New Customer
+Scenario Outline: Validate New Customer Page 
 
-Given user is in new customer page
-Then enter the customer details
+	Given Open the browser and enter the url
+	And User loged with "<username>"and "<password>"
+	When Click on new Customer link
+	Then enter the customer details and click on submit button
 
-|CustomerName|Dateofbirth|Address|City|State|Pin|MobileNumber|E-mail|password|
-|Zeeshan|April|PK|Kolkata|WB|700039|zee@gmail.com|123456|
+|CustomerName|Dateofbirth|Address|City   |State|Pin   |MobileNumber|E-mail       |password|
+|Zeeshan     |21-12-1212      |PK     |Kolkata|WB   |700039|9916188310  |zee@gmail.com|123456  S|
 
-Then Click on submit button
+
+Examples: 
+		|username|password|
+		|mgr123|mgr!23|

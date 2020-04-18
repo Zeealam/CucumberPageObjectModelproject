@@ -17,8 +17,6 @@ public class HomePage extends TestBase {
 	WebElement logout;
 	//// a[text()='Log out']
 
-	@FindBy(xpath = "//a[text()='New Customer']")
-	WebElement createcustomer;
 
 	@FindBy(xpath = "//ul[@class='menusubnav']/li")
 	List<WebElement> menuelistleftside;
@@ -39,11 +37,6 @@ public class HomePage extends TestBase {
 		logout.click();
 	}
 
-	public NewCustomer clickOnCustomer() {
-		createcustomer.click();
-		return new NewCustomer();
-
-	}
 
 	public int menuelist() {
 		List<WebElement> elements = menuelistleftside;

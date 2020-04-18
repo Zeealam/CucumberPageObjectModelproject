@@ -10,6 +10,9 @@ import com.qa.util.TestBase;
 
 public class NewCustomer extends TestBase {
 
+	@FindBy(xpath = "//a[text()='New Customer']")
+	WebElement createcustomer;
+
 	@FindBy(xpath = "//input[@name='name']")
 	WebElement cname;
 
@@ -50,6 +53,11 @@ public class NewCustomer extends TestBase {
 		PageFactory.initElements(driver, this);
 	}
 
+	public void clickOnCustomer() {
+		createcustomer.click();
+
+	}
+
 	public void addCustomerDetaild(String Customername, String dob, String Address, String City, String State,
 			String Pin, String mobileno, String Email, String Password) {
 		cname.sendKeys(Customername);
@@ -61,7 +69,7 @@ public class NewCustomer extends TestBase {
 		pin.sendKeys(mobileno);
 		email.sendKeys(Email);
 		password.sendKeys(Password);
-		//submit.click();
+		// submit.click();
 
 	}
 

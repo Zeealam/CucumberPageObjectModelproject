@@ -1,14 +1,17 @@
 package com.qa.stepDefinations;
 
-import static org.testng.Assert.assertTrue;
+
+import java.util.List;
 
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import com.qa.pages.HomePage;
 import com.qa.pages.LoginPage;
+import com.qa.pages.NewCustomer;
 import com.qa.util.TestBase;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -19,6 +22,7 @@ public class StepDefination extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;
 	SoftAssert soft = new SoftAssert();
+	NewCustomer newcustomer=null;
 
 	@Given("^Open the browser and enter the url$")
 	public void Open_the_browser_and_enter_the_url() {
@@ -122,8 +126,8 @@ public class StepDefination extends TestBase {
 
 	@Then("^user click on New Customer option$")
 	public void user_click_on_New_Customer_option() {
-		homepage = new HomePage();
-		homepage.clickOnCustomer();
+		newcustomer= new NewCustomer();
+		newcustomer.clickOnCustomer();
 
 	}
 
@@ -140,6 +144,28 @@ public class StepDefination extends TestBase {
 	public void Click_on_each_menue_list_in_left_side() throws InterruptedException {
 		homepage = new HomePage();
 		homepage.menuelistClick();
+	}
+	
+	@Given("^user is in new customer page$")
+	public void user_is_in_new_customer_page() {
+		String customerpagetitle = newcustomer.validateCustomerPageTitle();
+		Assert.assertEquals(customerpagetitle, "Guru99 Bank New Customer Entry Page");
+
+	}
+
+	@Then("^enter the customer details and click on submit button$")
+	public void enter_the_customer_details_and_click_on_submit_button(DataTable details) {
+
+		List<List<String>> data = details.raw();
+		newcustomer= new NewCustomer();
+		newcustomer.addCustomerDetaild(data.get(0).get(0), data.get(0).get(1), data.get(0).get(2), data.get(0).get(3),
+				data.get(0).get(4), data.get(0).get(5), data.get(0).get(6), data.get(0).get(7), data.get(0).get(8));
+
+	}
+	@When("^Click on new Customer link$")
+	public void Click_on_new_Customer_link() {
+		newcustomer= new NewCustomer();
+		newcustomer.clickOnCustomer();
 	}
 
 }
