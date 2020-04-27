@@ -155,7 +155,7 @@ public class StepDefination extends TestBase {
 
 	@Then("^enter the customer details and click on submit button$")
 	public void enter_the_customer_details_and_click_on_submit_button(DataTable details) {
-
+		
 		List<List<String>> data = details.raw();
 		newcustomer= new NewCustomer();
 		newcustomer.addCustomerDetaild(data.get(0).get(0), data.get(0).get(1), data.get(0).get(2), data.get(0).get(3),
